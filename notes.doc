@@ -1,0 +1,21 @@
+HTML
+header: Encabezado
+footer: Pie de página
+nav: Menú (permite a los navegadores encontrar el contenido del sitio)
+main: Contenido principal
+section: Agrupación de un contenido relacionado
+article: Artículo dentro del contenido principal
+div: Sirve para generar divisiones dentro de contenidos similares (por ejemplo: dividir campos de un formulario)
+aside: Contenido extra no relacionado al contenido (útil para banners publicitarios)
+form: Formularios, a su vez tiene varios subelementos que son:
+    input: Sirven para registrar informacion ingresada por los usuarios para lo cual hay varios tipos (type="")
+        text: Caja de texto
+        checkbox: Selección múltiple
+        radio: Selección única
+        tel: Teléfono (dentro del teclado movil aparecen sólo números)
+        email: Útil en dispositivos móviles (incluye la @ dentro del teclado)
+        number: Para registrar números (webs o móviles)
+        submit: Boton de enviar formulario
+    label: Etiquetas (por ejemplo: Nombre)
+    button: botones (tambien puede asignarsele type="submit")
+    textarea: Area de texto de tamano modificable
