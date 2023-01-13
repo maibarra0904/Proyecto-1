@@ -1,3 +1,13 @@
+/*Mecanismo para declarar variables en CSS*/
+:root {
+    --white: #ffffff;
+    --dark: #212121;
+    --primary: #ffc107;
+    --secondary: rgb(34, 135, 194);
+    --alternative: gray;
+    --principalfont: 3.8rem;
+}
+
 /*Código css para programar con una equivalencia de 1rem=10px*/
 html {
     font-size: 62.5%;
@@ -11,17 +21,29 @@ body {
 h1 {
     text-align: center;
     color: blue;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 h1 span {
     font-size: 2rem;
 }
 
+/*Si bien css toma el último estilo presentado (lee el código de arriba a abajo) 
+La especificidad consiste en que mientras más específico sea el llamado más probable es que
+este estilo se aplique indistintamente de su ubicación*/
+h1.titulo span {
+    color: rgb(23, 23, 160);
+}
+
 /*A las clases usando .className {}*/
 .titulo {
-    color: green; /*El h1 coincide con el de clase "titulo" por tanto css aplica el último estilo*/
+    color: var(--primary); /*El h1 coincide con el de clase "titulo" por tanto css aplica el último estilo*/
+    font-size: var(--principalfont);
+    font-family: 'Montserrat', sans-serif;
 }
+
+
+
 
 /*En combinaciones de descendentes .className .subclassName {}*/
 .titulo span {
@@ -31,7 +53,77 @@ h1 span {
 /*A los id's usando #id {}*/
 
 /*A los parrafos hijos por ejemplo .className > p{}*/
-/*A objetos con algun atributo ejemplo: [src="loco.jpg"]* {}/
+/*A objetos con algun atributo ejemplo: [src="loco.jpg"]*/
+
+.contenedor {
+    max-width: 120rem; /*Aplica estas caracteristicas hasta 1200 pixeles:120 rem*/
+    margin: 0 auto 0 auto; /*Margen desde la parte superior, derecha, inferior e izquierda respectivamente*/
+}
+
+.nav-bg {
+    background-color: var(--secondary);
+}
+
+.navegacion-principal {
+    /*Aplicación de FLEXBOX*/
+    display: flex; /*Habilita la distribución deseada de los elementos dentro del menú*/
+    flex-direction: column;  /*Permite cambiar la dirección de los elementos por default viene "row"*/
+    align-items: center;/*Alinea los elementos cuando el flex-direction es "column"*/
+}
+
+/*Cuando colocas "a" refiere a las referencias*/
+.navegacion-principal a {
+    /*background-color: var(--primary);*/
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+/*Configuración cuando se pasa el puntero del mouse por el menú*/
+.navegacion-principal a:hover { /*visited:cuando se ha visitado el sitio*/
+    color: var(--dark);
+    background-color: var(--primary);
+}
+
+/*focus:Configuración cuando se ha clickado elemento actual del menú*/
+.navegacion-principal a:focus {
+    color: var(--dark);
+}
 
 
+p {
+    display: block; /*Display hace alusión a la forma de cómo están dispuestos los elementos:
+    "block", por ejemplo, dispone los elementos uno debajo del otro. "inline", los despliega 
+    de izquierda a derecha*/
+}
 
+/*Implementación de mediaquery*/
+
+/*Se normaliza la insercion de Media Queries con el siguiente procedimiento aqui en VS-Code:
+1. Ctrl+Shift+P
+2. User snipets (configure)
+3. CSS (json)*/
+
+
+/*Permite aplicar una apariencia dependiendo del tamaño del dispositivo
+útil para crear responsive-design*/
+
+/*Aplicar cuando el tamaño sea mínimo 480 px lo siguiente: (útil para diferenciar con dispositivos móviles)*/
+@media (min-width: 480px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between; /*Se selecciona la distribución deseada, en 
+        este caso "space-between" permite espaciar los elementos internos*/
+    }
+}
+
+
+/*Tamaño usalmente utilizado para diferenciar tablets*/
+/*
+@media (min-width: 768px) { 
+    body {
+        background-color: rgb(26, 184, 26);
+    }
+}
+*/
