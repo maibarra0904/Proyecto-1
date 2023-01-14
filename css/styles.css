@@ -3,7 +3,7 @@
     --white: #ffffff;
     --dark: #212121;
     --primary: #ffc107;
-    --secondary: rgb(34, 135, 194);
+    --secondary: #2287c2;
     --alternative: gray;
     --principalfont: 3.8rem;
 }
@@ -11,34 +11,55 @@
 /*Código css para programar con una equivalencia de 1rem=10px*/
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px;
 }
 
+
+
+
 /*Los estilos pueden aplicarse a los elementos del html de forma directa*/
 h1 {
     text-align: center;
     color: blue;
     /*text-transform: uppercase;*/
+    font-size: var(--principalfont);
+}
+
+h2 {
+    font-size: var(2.8rem);
+}
+
+h3 {
+    font-size: var(1.8rem);
 }
 
 h1 span {
     font-size: 2rem;
 }
 
+h1, h2, h3 {
+    align-items: center;
+}
+
+
 /*Si bien css toma el último estilo presentado (lee el código de arriba a abajo) 
 La especificidad consiste en que mientras más específico sea el llamado más probable es que
 este estilo se aplique indistintamente de su ubicación*/
 h1.titulo span {
-    color: rgb(23, 23, 160);
+    color: var(--secondary);
 }
 
 /*A las clases usando .className {}*/
 .titulo {
     color: var(--primary); /*El h1 coincide con el de clase "titulo" por tanto css aplica el último estilo*/
-    font-size: var(--principalfont);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -98,6 +119,7 @@ p {
     de izquierda a derecha*/
 }
 
+
 /*Implementación de mediaquery*/
 
 /*Se normaliza la insercion de Media Queries con el siguiente procedimiento aqui en VS-Code:
@@ -127,3 +149,37 @@ p {
     }
 }
 */
+
+.hero {
+    background-image: url(../images/wd.jpg);
+    background-repeat: no-repeat; /*No repite la imagen si el ancho de la página es mayor que el de la imagen*/
+    background-size: cover; /*Cubre la imagen a lo ancho de la pagina*/
+    height: 410px;
+    padding: 20px;
+    position: relative; /*Si quiero que un hijo (de hero en este caso) tenga posición absoluta
+    debo colocarle al padre position: relative*/
+}
+
+.contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7); /*Alpha (el ultimo valor) representa el porcentaje del color 
+    en elemento. En este caso el 70% crea el efecto sombra sobre el objeto imagen*/
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alineación horizontal*/
+    justify-content: center; /*Alineación vertical*/
+}
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--white);
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
