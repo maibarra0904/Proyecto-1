@@ -4,6 +4,7 @@
     --dark: #212121;
     --primary: #ffc107;
     --secondary: #2287c2;
+    --tertiary: rgb(248, 241, 134);
     --alternative: #d5e5ec;
     --principalfont: 3.8rem;
 }
@@ -81,7 +82,7 @@ h1.titulo span {
 
 .contenedor {
     max-width: 120rem; /*Aplica estas caracteristicas hasta 1200 pixeles:120 rem*/
-    margin: 0 auto; /*Margen desde la parte superior, derecha, inferior e izquierda respectivamente*/
+    margin: 1%; /*Margen desde la parte superior, derecha, inferior e izquierda respectivamente*/
 }
 
 .boton {
@@ -107,8 +108,9 @@ h1.titulo span {
 
 .sombra {
     box-shadow: 2px 4px 23px -3px var(--secondary);
-    -webkit-box-shadow: 2px 4px 23px -3px var(--secondary);
-    -moz-box-shadow: 2px 4px 23px -3px var(--secondary);
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .nav-bg {
@@ -213,4 +215,72 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+/*Programación para que se vean 3 columnas en tablets y sitios web (excepto móviles)*/
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /*fr: fracciones iguales, Ej: Si coloco 1fr 1fr
+        divide el template en 2 columnas iguales, 1fr 1fr 1fr en 3 iguales y así sucesivamente;
+        siempre que el ancho de columna sea el mismo, se puede suprimir el anterior código por
+        el siguiente: repeat(3,1fr) */
+        column-gap: 2rem; /*Separación entre columnas*/
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+    color: var(--secondary);
+    font-weight: normal;
+}
+
+.servicio p {
+    line-height: 2.5rem;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; /*space-evenly serviría si tengo más de un ícono en el mismo div*/
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .servicio p {
+        text-align: center;
+    }
+}
+
+.formulario {
+    background-color: var(--tertiary);
+    width: min(60rem, 100%); /*Toma el valor más pequeño entre dos*/
+    /*En este caso, como el formulario no es muy ancho, lo ajusta a 600 px (60rem) 
+    o al 100% del ancho tomando siempre al más pequeño entre ambos*/
+    margin: auto; /*Se usa margin cuando la clase no tiene padre con display:flex*/
+    /*Si fuera este el caso sería útil usar justify-content*/
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/*Edición de propiedades por default del formulario*/
+.formulario fieldset {
+    border: none; /*Le quita el borde*/
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--secondary);
 }
