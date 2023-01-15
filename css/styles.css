@@ -4,7 +4,7 @@
     --dark: #212121;
     --primary: #ffc107;
     --secondary: #2287c2;
-    --alternative: gray;
+    --alternative: #d5e5ec;
     --principalfont: 3.8rem;
 }
 
@@ -20,6 +20,8 @@ html {
 
 body {
     font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to top, var(--alternative) 0%, var(--white) 100%);
 }
 
 
@@ -43,10 +45,12 @@ h3 {
 
 h1 span {
     font-size: 2rem;
+    
 }
 
 h1, h2, h3 {
-    align-items: center;
+    /*align-items: center;*/
+    text-align: center;
 }
 
 
@@ -60,7 +64,6 @@ h1.titulo span {
 /*A las clases usando .className {}*/
 .titulo {
     color: var(--primary); /*El h1 coincide con el de clase "titulo" por tanto css aplica el último estilo*/
-    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -78,7 +81,34 @@ h1.titulo span {
 
 .contenedor {
     max-width: 120rem; /*Aplica estas caracteristicas hasta 1200 pixeles:120 rem*/
-    margin: 0 auto 0 auto; /*Margen desde la parte superior, derecha, inferior e izquierda respectivamente*/
+    margin: 0 auto; /*Margen desde la parte superior, derecha, inferior e izquierda respectivamente*/
+}
+
+.boton {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 1rem 3rem; /*Son los márgenes superior-inferior y laterales a partir del texto*/
+    margin-top: 1rem; /*Le da la separación respecto al parrafo superior (Milagro,Guayas)*/
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.5rem; /*Le da el efecto de contorno redondeado*/
+    width: 60%; /*100% implica que el boton se verá en todo el ancho de la pantalla*/
+    text-align: center;
+}
+
+/*Configuración para que solo en las tablets y laptos se vea un botón pequeño*/
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.sombra {
+    box-shadow: 2px 4px 23px -3px var(--secondary);
+    -webkit-box-shadow: 2px 4px 23px -3px var(--secondary);
+    -moz-box-shadow: 2px 4px 23px -3px var(--secondary);
 }
 
 .nav-bg {
@@ -114,7 +144,8 @@ h1.titulo span {
 
 
 p {
-    display: block; /*Display hace alusión a la forma de cómo están dispuestos los elementos:
+    display: block; 
+    /*Display hace alusión a la forma de cómo están dispuestos los elementos:
     "block", por ejemplo, dispone los elementos uno debajo del otro. "inline", los despliega 
     de izquierda a derecha*/
 }
@@ -155,7 +186,7 @@ p {
     background-repeat: no-repeat; /*No repite la imagen si el ancho de la página es mayor que el de la imagen*/
     background-size: cover; /*Cubre la imagen a lo ancho de la pagina*/
     height: 410px;
-    padding: 20px;
+    /*padding: 20px;*/
     position: relative; /*Si quiero que un hijo (de hero en este caso) tenga posición absoluta
     debo colocarle al padre position: relative*/
 }
