@@ -4,9 +4,11 @@
     --dark: #212121;
     --primary: #ffc107;
     --secondary: rgb(34, 135, 194);
-    --tertiary: rgb(248, 241, 134);
+    --tertiary: #f8f186;
     --alternative: #d5e5ec;
     --principalfont: 3.8rem;
+    --form-ok-color: green;
+    --form-error-color: red;
 }
 
 /*Código css para programar con una equivalencia de 1rem=10px*/
@@ -16,12 +18,15 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-.servicios,
-.navegacion-principal,
-.formulario {
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+@media (min-width: 768px) {
+    .servicios,
+    .navegacion-principal,
+    .formulario {
+        scroll-snap-align: center;
+        scroll-snap-stop: always;
+    }
 }
+
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -284,6 +289,54 @@ p {
     border-radius: 1rem;
 }
 
+.formulario [required]:valid {
+    border: thin solid var(--form-ok-color);
+}
+
+.formulario [required]:invalid {
+    border: thin solid var(--form-error-color);
+}
+
+.formulario-error {
+    margin-top: -1rem;
+    font-size: 80%;
+    /*background-color: var(--form-error-color);*/
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+.formulario-error.is-active {
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.formulario-response {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario-loader {
+    display: flex;
+    justify-content: center;
+}
+
+.none {
+    display: none;
+}
+
+@keyframes show-message {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @media (min-width: 768px) {
     .formulario {
         width: min(100rem, 100%);
@@ -336,6 +389,7 @@ p {
 
 .campo textarea {
     height: 15rem;
+    cursor: text;
 }
 
 /*.contenedor input [type="text"] {}*/ 
