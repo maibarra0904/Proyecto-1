@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Mario Ibarra - WD</title>
+    <link rel="icon" type="image/jpg" sizes="32x32" href="images/icono.jpg">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <p>Nosotros</p>
+    <header>
+        <h1 class="titulo">Mario Ibarra - Desarrollador Web <span>Freelance</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="nosotros.html">Inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Diseño y Desarrollo Web</h2>
+            
+            <div class="ubicacion">
+                <p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" width="56" height="56" viewBox="0 0 24 24" stroke-width="2.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="12" r="3" />
+                    <circle cx="12" cy="12" r="8" />
+                    <line x1="12" y1="2" x2="12" y2="4" />
+                    <line x1="12" y1="20" x2="12" y2="22" />
+                    <line x1="20" y1="12" x2="22" y2="12" />
+                    <line x1="2" y1="12" x2="4" y2="12" />
+                </svg>
+                Milagro, Guayas</p>
+            </div>
+
+            <a class="boton" href="https://walink.co/9cfad8">Contactar</a>
+        </div> <!-- .contenido hero -->
+    </section>
+    
+    <main class="contenedor sombra"></main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+    <script>
+        const d = document,
+        $main = d.querySelector("main");
+        
+        fetch("data/nosotros.md")
+        .then(res => res.ok ? res.text(): Promise.reject(res))
+        .then(text =>{
+            console.log(text);
+            $main.innerHTML = new showdown.Converter().makeHtml(text);
+
+        })
+        .catch(err => {
+            console.log(err);
+            let message = err.statusText || "Ocurrió un error";
+            $main.innerHTML = `Error ${err.status}: ${message}`;
+        })
+    </script>
+
 </body>
 </html>
