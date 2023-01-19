@@ -18,11 +18,11 @@
     </header>
 
     <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
-            <a href="nosotros.html">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre mi</a>
+            <a href="developments.html">Mis Desarrollos</a>
+            <a href="index.html#contact-form">Contacto</a>
         </nav>
     </div>
 
@@ -55,7 +55,7 @@
         const d = document,
         $main = d.querySelector("main");
         
-        fetch("data/nosotros.md")
+        fetch("data/desarrollos.md")
         .then(res => res.ok ? res.text(): Promise.reject(res))
         .then(text =>{
             console.log(text);
