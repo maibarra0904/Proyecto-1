@@ -8,4 +8,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://radiant-anchorage-81341.herokuapp.com/" target="_blank">Bienes Raices</a>
 
+<a href="https://guarded-basin-94163.herokuapp.com/" target="_blank">Peluquería</a>
+
 <p>Y otros...</p>
