@@ -6,6 +6,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://rockfestivaladd.netlify.app/" target="_blank">Rock Festival</a>
 
-<a href="https://todotask23.netlify.app/" target="_blank">ToDo</a>
+<a href="https://todotask23bymaim.netlify.app/" target="_blank">ToDo App</a>
 
 <p>Y otros...</p>
