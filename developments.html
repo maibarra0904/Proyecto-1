@@ -66,7 +66,7 @@
         .then(text =>{
             console.log(text);
             $main.innerHTML = new showdown.Converter().makeHtml(text);
-
+            
         })
         .catch(err => {
             console.log(err);
