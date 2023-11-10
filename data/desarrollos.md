@@ -10,4 +10,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://react-6fe97.web.app/" target="_blank">URL Redirect</a>
 
+<a href="https://blogstatic.netlify.app/" target="_blank">Blog Personal</a>
+
 <p>Y otros...</p>
