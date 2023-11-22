@@ -12,4 +12,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://blogstatic.netlify.app/" target="_blank">Blog Personal</a>
 
+<a href="https://veterinary-followup.netlify.app/" target="_blank">Veterinary Follow-up</a>
+
 <p>Y otros...</p>
