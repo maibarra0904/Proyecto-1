@@ -14,4 +14,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://veterinary-followup.netlify.app/" target="_blank">Veterinary Follow-up</a>
 
+<a href="https://expense-planner-2023.netlify.app/" target="_blank">Expense-Planner</a>
+
 <p>Y otros...</p>
