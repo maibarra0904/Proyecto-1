@@ -16,4 +16,6 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://expense-planner-2023.netlify.app/" target="_blank">Expense-Planner</a>
 
+<a href="https://cotizador-criptos-23.netlify.app/" target="_blank">Cotizador-Criptomonedas</a>
+
 <p>Y otros...</p>
