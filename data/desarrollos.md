@@ -18,8 +18,8 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://cotizador-criptos-23.netlify.app/" target="_blank">Cotizador-Criptomonedas</a>
 
-<a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa</a>
+<a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>
 
-
+<a href="https://guitarla-next-topaz.vercel.app/" target="_blank">GuitarLa (NextJs)</a>
 
 <p>Y otros...</p>
