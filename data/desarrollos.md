@@ -22,6 +22,8 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://guitarla-next-topaz.vercel.app/" target="_blank">GuitarLa (NextJs)</a>
 
-<a href="https://cotizadorseguros23.netlify.app/" target="_blank">Cotizador de Segurod (Vite)</a>
+<a href="https://cotizadorseguros23.netlify.app/" target="_blank">Cotizador de Seguros (Vite)</a>
+
+<a href="https://consultaclima24.netlify.app/" target="_blank">Consulta de Climas (Vite)</a>
 
 <p>Y otros...</p>
