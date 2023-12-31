@@ -27,7 +27,7 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://consultaclima24.netlify.app/" target="_blank">Consulta de Climas (Vite)</a>
 
-
+<a href="https://recetasbebidas24.netlify.app/" target="_blank">Recetas de bebidas (Vite)</a>
 
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
