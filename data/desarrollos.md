@@ -1,5 +1,8 @@
 A continuación se presentan varios proyectos que he realizado:
 
+## De libre acceso 
+### Cualquier usuario puede observarlos
+
 <a href="https://forexamplestore.netlify.app/" target="_blank">FrontEnd Store</a>
 
 <a href="https://coffeeknowledge.netlify.app/" target="_blank">Blog de Café</a>
@@ -18,12 +21,23 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://cotizador-criptos-23.netlify.app/" target="_blank">Cotizador-Criptomonedas</a>
 
-<a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>
 
-<a href="https://guitarla-next-topaz.vercel.app/" target="_blank">GuitarLa (NextJs)</a>
 
 <a href="https://cotizadorseguros23.netlify.app/" target="_blank">Cotizador de Seguros (Vite)</a>
 
 <a href="https://consultaclima24.netlify.app/" target="_blank">Consulta de Climas (Vite)</a>
+
+
+
+## Acceso limitado 
+### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
+<a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
+Requiere despertar la API de strapi
+
+<a href="https://guitarla-next-topaz.vercel.app/" target="_blank">GuitarLa (NextJs)</a>:
+Requiere despertar la API de strapi
+
+<a href="https://marioibarra.netlify.app/developments.html">Buscador de Noticias (Vite)</a>
+API funciona solo en servidor local, el enlace te redirecciona a esta misma página
 
 <p>Y otros...</p>

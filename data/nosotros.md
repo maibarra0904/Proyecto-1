@@ -1,6 +1,6 @@
 # Desarrollo
 
-## Desarrollo aplicaciones web con javascript, css y html con otras tecnologías derivadas como react y angular.
+## Desarrollo aplicaciones web con javascript, css y html. Mi especialidad es React, he usado Vite, Next y Astro para el desarrollo de las aplicaciones web que se muestran en mis desarrollos.
 
 
 
