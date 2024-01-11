@@ -29,6 +29,8 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://recetasbebidas24.netlify.app/" target="_blank">Recetas de bebidas (Vite)</a>
 
+<a href="https://quiosco-next-production.up.railway.app/" target="_blank">Quiosco App (Next)</a>
+
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
 <a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
