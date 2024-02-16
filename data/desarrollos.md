@@ -42,4 +42,7 @@ Requiere despertar la API de strapi
 <a href="https://marioibarra.netlify.app/developments.html">Buscador de Noticias (Vite)</a>
 API funciona solo en servidor local, el enlace te redirecciona a esta misma página
 
+<a href="https://uptaskmern.vercel.app/">UpTask (MERN con Vite)</a>
+App MERN de gestión de proyectos
+
 <p>Y otros...</p>
