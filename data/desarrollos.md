@@ -29,15 +29,17 @@ A continuación se presentan varios proyectos que he realizado:
 
 <a href="https://recetasbebidas24.netlify.app/" target="_blank">Recetas de bebidas (Vite)</a>
 
-<a href="https://quiosco-next-production.up.railway.app/" target="_blank">Quiosco App (Next)</a>
+<!-- <a href="https://quiosco-next-production.up.railway.app/" target="_blank">Quiosco App (Next)</a> -->
+
+<a href="https://producthunt-next-eight.vercel.app/" target="_blank">ProductHunt (Next)</a>
 
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
-<a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
+<!-- <a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
 Requiere despertar la API de strapi
 
 <a href="https://guitarla-next-topaz.vercel.app/" target="_blank">GuitarLa (NextJs)</a>:
-Requiere despertar la API de strapi
+Requiere despertar la API de strapi -->
 
 <a href="https://marioibarra.netlify.app/developments.html" target="_blank">Buscador de Noticias (Vite)</a>
 API funciona solo en servidor local, el enlace te redirecciona a esta misma página
