@@ -32,7 +32,7 @@ A continuación se presentan varios proyectos que he realizado:
 <!-- <a href="https://quiosco-next-production.up.railway.app/" target="_blank">Quiosco App (Next)</a> -->
 
 <a href="https://producthunt-next-eight.vercel.app/" target="_blank">ProductHunt (Next)</a>
-
+<p> Recarga la página si te da un error </p>
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
 <!-- <a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
