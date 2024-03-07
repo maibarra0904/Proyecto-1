@@ -32,7 +32,8 @@ A continuación se presentan varios proyectos que he realizado:
 <!-- <a href="https://quiosco-next-production.up.railway.app/" target="_blank">Quiosco App (Next)</a> -->
 
 <a href="https://producthunt-next-eight.vercel.app/" target="_blank">ProductHunt (Next)</a>
-<p> Recarga la página si te da un error </p>
+Recarga la página si te da un error
+
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
 <!-- <a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
@@ -42,9 +43,12 @@ Requiere despertar la API de strapi
 Requiere despertar la API de strapi -->
 
 <a href="https://marioibarra.netlify.app/developments.html" target="_blank">Buscador de Noticias (Vite)</a>
-API funciona solo en servidor local, el enlace te redirecciona a esta misma página
+API funciona solo en servidor local, el enlace te redirecciona a esta misma página.
 
 <a href="https://uptaskmern.vercel.app/" target="_blank">UpTask (MERN con Vite)</a>
-App MERN de gestión de proyectos
+App MERN de gestión de proyectos. Requiere un Redeploy en Render previamente para el uso.
+
+<a href="https://nodesendfrontend-next.vercel.app" target="_blank">NodeSendReact (MERN con Next)</a>
+App de envío de archivos cifrados. Requiere un Redeploy en Render previamente para el uso.
 
 <p>Y otros...</p>
