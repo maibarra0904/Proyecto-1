@@ -51,4 +51,7 @@ App MERN de gestión de proyectos. Requiere un Redeploy en Render previamente pa
 <a href="https://nodesendfrontend-next.vercel.app" target="_blank">NodeSendReact (MERN con Next)</a>
 App de envío de archivos cifrados. Requiere un Redeploy en Render previamente para el uso.
 
+<a href="https://quiosco-next24.vercel.app/" target="_blank">Quiosco (Postgres y Prisma con Next)</a>
+App de servicio. Usa una BD gratuita de Postgres en render. Es necesario actualizarla en caso que cumpla el período de gratuidad.
+
 <p>Y otros...</p>
