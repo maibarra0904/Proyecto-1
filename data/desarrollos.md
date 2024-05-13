@@ -34,6 +34,9 @@ A continuación se presentan varios proyectos que he realizado:
 <a href="https://producthunt-next-eight.vercel.app/" target="_blank">ProductHunt (Next)</a>
 Recarga la página si te da un error
 
+<a href="https://frontend-product.vercel.app/" target="_blank">ProductAdd (Vite + Sequelize + TypeScript)</a>
+Recarga la página si te da un error
+
 ## Acceso limitado 
 ### Solo desarrolladores podrán ver el resultado de estas app's luego de ponerse en contacto
 <!-- <a href="https://06-guitar-remix.vercel.app/" target="_blank">GuitarLa (Remix)</a>:
